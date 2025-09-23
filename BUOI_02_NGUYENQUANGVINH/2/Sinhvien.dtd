@@ -1,0 +1,7 @@
+<!ELEMENT lop (sinhvien+)>
+<!ELEMENT sinhvien (name, id, subject+)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT subject (subject_name, score)>
+<!ELEMENT subject_name (#PCDATA)>
+<!ELEMENT score (#PCDATA)>

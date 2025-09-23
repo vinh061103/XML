@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students SYSTEM "students.dtd"
+<students>
+    <student id="SV1">
+        <name>Nguyễn Quang Vinh</name>
+        <dob>06-11-2003</dob>
+        <major>Công nghệ thông tin</major>
+    </student>
+    <student id="SV2">
+        <name>Phan Nguyễn Huỳnh Như</name>
+        <dob>30-12-2004</dob>
+        <major>Công nghệ thông tin</major>
+    </student>
+</students>
