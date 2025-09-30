@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thuvien 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="thuvien_IDREF.xsd">
+
+    <book id="B1">
+        <title>Lập trình Python</title>
+        <author>Nguyễn Quang Vinh</author>
+        <year>2025</year>
+        <genre>Công nghệ</genre>
+    </book>
+    <book id="B2">
+        <title>XML</title>
+        <author>Nguyễn Quang Vinh</author>
+        <year>2025</year>
+        <genre>Công nghệ</genre>
+    </book>
+    <book id="B3">
+        <title>Kinh tế cơ bản</title>
+        <author>Nguyễn Quang Vinh</author>
+        <year>2025</year>
+        <genre>Kinh tế</genre>
+    </book>
+    <loan bookRef="B1" readerID="R001"/> 
+    <loan bookRef="B3" readerID="R002"/>
+    <loan bookRef="B2" readerID="R001"/>
+
+</thuvien>

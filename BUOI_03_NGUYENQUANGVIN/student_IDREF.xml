@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE students SYSTEM "students.dtd">
-<students>
-    <student id="SV1">
+<students 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="student_IDREF.xsd">
+
+ <student id="SV1">
         <name>Nguyễn Quang Vinh</name>
         <dob>06-11-2003</dob>
         <major>Công nghệ thông tin</major>
@@ -11,4 +14,6 @@
         <dob>30-12-2004</dob>
         <major>Công nghệ thông tin</major>
     </student>
-</students>S
+    <enrollment studentRef="SV1" course="Toan101"/>
+    <enrollment studentRef="SV2" course="VatLy203"/>
+</students>

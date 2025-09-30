@@ -1,0 +1,39 @@
+vv<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="orders">
+        <xs:complexType> <!--có thể chứa các phần tử con hoặc thuộc tính .-->
+            <xs:sequence>
+                <xs:element name="order" type="OrderType" maxOccurs="unbounded"/>
+                <xs:element name="shipment" type="ShipmentType" minOccurs="0" maxOccurs="unbounded"/> 
+<!--minOccurs="0": có thể không có shipment nào
+maxOccurs="unbounded": số lượng không giới hạn.-->
+            </xs:sequence>
+        </xs:complexType>
+        <xs:unique name="UniqueOrderID">
+            <xs:selector xpath="order"/>
+            <xs:field xpath="@id"/>
+        </xs:unique>
+    </xs:element>
+    <xs:complexType name="OrderType">
+        <xs:sequence>
+            <xs:element name="product" type="ProductType" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/> 
+        <xs:unique name="UniqueProductIDWithinOrder">
+            <xs:selector xpath="product"/>
+            <xs:field xpath="@id"/>
+            <!--Ràng buộc unique: đảm bảo rằng trong mỗi order, các product phải có id duy nhất (không được trùng).-->
+        </xs:unique>
+    </xs:complexType>
+    <xs:complexType name="ProductType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="quantity" type="xs:positiveInteger"/> <!--kiểu số nguyên dương.Giá trị phải là số nguyên lớn hơn 0, Không được có số âm, số 0, hoặc số thập phân.-->
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="ShipmentType"> 
+    <!--orderRef: tham chiếu tới một order (kiểu IDREF → phải trỏ đến một id hợp lệ trong order).-->
+        <xs:attribute name="orderRef" type="xs:IDREF" use="required"/> 
+        <xs:attribute name="shipper" type="xs:string" use="required"/>
+    </xs:complexType>
+</xs:schema>
