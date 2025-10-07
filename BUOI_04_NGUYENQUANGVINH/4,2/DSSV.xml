@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSSV xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="DSSV.xsd">
+
+  <KHOAS>
+    <KHOA MAKHOA="CNTT" TENKHOA="cntt"/>
+    <KHOA MAKHOA="TOAN" TENKHOA="toan"/>
+    <KHOA MAKHOA="LY" TENKHOA="ly"/>
+  </KHOAS>
+
+  <LOPS>
+    <LOP MALOP="CT01" TENLOP="Lap trinh A" MAKHOA="CNTT"/>
+    <LOP MALOP="CT02" TENLOP="Lap trinh B" MAKHOA="CNTT"/>
+    <LOP MALOP="T01" TENLOP="Toan cao cap" MAKHOA="TOAN"/>
+    <LOP MALOP="L01" TENLOP="Vat ly dai cuong" MAKHOA="LY"/>
+  </LOPS>
+
+  <SINHVIENS>
+    <SINHVIEN MSSV="SV001">
+      <HOTEN>Nguyen Van Mong</HOTEN>
+      <EMAIL>mong@gmail.com</EMAIL>
+      <DIACHI>Ha Noi</DIACHI>
+      <SDT>0912345678</SDT>
+      <MALOP>CT01</MALOP>
+    </SINHVIEN>
+
+    <SINHVIEN MSSV="SV002">
+      <HOTEN>Tran Thi Bé Hai</HOTEN>
+      <EMAIL>hai@gmail.com</EMAIL>
+      <DIACHI>Hai Phong</DIACHI>
+      <SDT>0987654321</SDT>
+      <MALOP>CT02</MALOP>
+    </SINHVIEN>
+
+    <SINHVIEN MSSV="SV003">
+      <HOTEN>Le Van Dinh</HOTEN>
+      <EMAIL>Dinh@gmail.com</EMAIL>
+      <DIACHI>Da Nang</DIACHI>
+      <SDT>0909123456</SDT>
+      <MALOP>T01</MALOP>
+    </SINHVIEN>
+  </SINHVIENS>
+
+</DSSV>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<q:QUANAN xmlns:q="http://example.com/quanan"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://example.com/quanan quanan.xsd">
+
+  <q:BANS>
+    <q:BAN TENBAN="B01" SOBAN="1"/>
+    <q:BAN TENBAN="B02" SOBAN="2"/>
+    <q:BAN TENBAN="B03" SOBAN="3"/>
+    <q:BAN TENBAN="B04" SOBAN="4"/>
+    <q:BAN TENBAN="B05" SOBAN="5"/>
+  </q:BANS>
+
+  <q:MONS>
+    <q:MON MAMON="M01">
+      <q:TENMON>Com Ga</q:TENMON>
+      <q:GIA>50000</q:GIA>
+      <q:HINHANH>comga.jpg</q:HINHANH>
+    </q:MON>
+    <q:MON MAMON="M02">
+      <q:TENMON>Pho</q:TENMON>
+      <q:GIA>40000</q:GIA>
+      <q:HINHANH>pho.jpg</q:HINHANH>
+    </q:MON>
+    <q:MON MAMON="M03">
+      <q:TENMON>Bun Cha</q:TENMON>
+      <q:GIA>45000</q:GIA>
+      <q:HINHANH>buncha.jpg</q:HINHANH>
+    </q:MON>
+    <q:MON MAMON="M04">
+      <q:TENMON>Hu Tieu</q:TENMON>
+      <q:GIA>35000</q:GIA>
+      <q:HINHANH>hutieu.jpg</q:HINHANH>
+    </q:MON>
+    <q:MON MAMON="M05">
+      <q:TENMON>Mi Quang</q:TENMON>
+      <q:GIA>55000</q:GIA>
+      <q:HINHANH>miquang.jpg</q:HINHANH>
+    </q:MON>
+  </q:MONS>
+
+  <q:NHANVIENS>
+    <q:NHANVIEN MANV="NV01">
+      <q:TENNV>Nguyen Van Trieu</q:TENNV>
+      <q:SDT>0912345678</q:SDT>
+      <q:DIACHI>Ha Noi</q:DIACHI>
+      <q:GIOITINH>Nam</q:GIOITINH>
+      <q:USERNAME>user001</q:USERNAME>
+      <q:PASSWORD>Trieu0912345678</q:PASSWORD>
+    </q:NHANVIEN>
+    <q:NHANVIEN MANV="NV02">
+      <q:TENNV>Tran Thi My Tịe</q:TENNV>
+      <q:SDT>0987654321</q:SDT>
+      <q:DIACHI>HCM</q:DIACHI>
+      <q:GIOITINH>Nu</q:GIOITINH>
+      <q:USERNAME>user002</q:USERNAME>
+      <q:PASSWORD>Tien0987654321</q:PASSWORD>
+    </q:NHANVIEN>
+    <q:NHANVIEN MANV="NV03">
+      <q:TENNV>Le Van Dinh</q:TENNV>
+      <q:SDT>0909123456</q:SDT>
+      <q:DIACHI>Da Nang</q:DIACHI>
+      <q:GIOITINH>Nam</q:GIOITINH>
+      <q:USERNAME>user003</q:USERNAME>
+      <q:PASSWORD>Dinh0909123456</q:PASSWORD>
+    </q:NHANVIEN>
+    <q:NHANVIEN MANV="NV04">
+      <q:TENNV>Pham Thi Mỹ Hằng</q:TENNV>
+      <q:SDT>0911222333</q:SDT>
+      <q:DIACHI>Hai Phong</q:DIACHI>
+      <q:GIOITINH>Nu</q:GIOITINH>
+      <q:USERNAME>user004</q:USERNAME>
+      <q:PASSWORD>hang0911222333</q:PASSWORD>
+    </q:NHANVIEN>
+    <q:NHANVIEN MANV="NV05">
+      <q:TENNV>Do Van Chien</q:TENNV>
+      <q:SDT>0933344555</q:SDT>
+      <q:DIACHI>Can Tho</q:DIACHI>
+      <q:GIOITINH>Nam</q:GIOITINH>
+      <q:USERNAME>user005</q:USERNAME>
+      <q:PASSWORD>Chien0933344555</q:PASSWORD>
+    </q:NHANVIEN>
+  </q:NHANVIENS>
+
+  <q:HOADONS>
+    <q:HOADON SOHD="HD01" NGAYLAP="2025-10-07" TONGTIEN="150000" TENBAN="B01" MANV="NV01"/>
+    <q:HOADON SOHD="HD02" NGAYLAP="2025-10-07" TONGTIEN="120000" TENBAN="B02" MANV="NV02"/>
+    <q:HOADON SOHD="HD03" NGAYLAP="2025-10-07" TONGTIEN="90000" TENBAN="B03" MANV="NV03"/>
+    <q:HOADON SOHD="HD04" NGAYLAP="2025-10-07" TONGTIEN="200000" TENBAN="B04" MANV="NV04"/>
+    <q:HOADON SOHD="HD05" NGAYLAP="2025-10-07" TONGTIEN="170000" TENBAN="B05" MANV="NV05"/>
+  </q:HOADONS>
+
+  <q:CTHDS>
+    <q:CTHD SOHD="HD01" MAMON="M01" SOLUONG="2"/>
+    <q:CTHD SOHD="HD01" MAMON="M02" SOLUONG="1"/>
+    <q:CTHD SOHD="HD02" MAMON="M03" SOLUONG="3"/>
+    <q:CTHD SOHD="HD03" MAMON="M04" SOLUONG="2"/>
+    <q:CTHD SOHD="HD05" MAMON="M05" SOLUONG="4"/>
+  </q:CTHDS>
+
+
+</q:QUANAN>
